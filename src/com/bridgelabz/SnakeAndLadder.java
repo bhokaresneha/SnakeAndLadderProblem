@@ -43,5 +43,8 @@ public class SnakeAndLadder
             playerPosition++;
         }
         System.out.println("Player Position::"+playerPosition);
+
+   
     }
+      
 }
