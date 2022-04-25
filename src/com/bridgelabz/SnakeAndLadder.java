@@ -21,11 +21,11 @@ public class SnakeAndLadder
             int option=random.nextInt(3);
 
             if (option == 0) {
-                // System.out.println("No Play");
+                 System.out.println("No Play");
                 playerPosition = playerPosition;
             }else if (option == 1)
                 {
-                    //System.out.println("Ladder");
+                    System.out.println("Ladder");
                     if (playerPosition>WINNING_POSITION)
                       playerPosition = playerPosition- dies;
                         else
@@ -33,7 +33,7 @@ public class SnakeAndLadder
 
                 }
                 else {
-                         //System.out.println("Snake");
+                         System.out.println("Snake");
                         playerPosition = playerPosition - dies;
                         if (playerPosition < 0)
                             playerPosition=0;
