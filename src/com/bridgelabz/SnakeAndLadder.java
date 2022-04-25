@@ -14,4 +14,5 @@ public class SnakeAndLadder
         System.out.println("Number on dies =" + dies);
 
     }
+      
 }
