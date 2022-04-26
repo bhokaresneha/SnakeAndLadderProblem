@@ -18,19 +18,23 @@ public class SnakeAndLadder
             // generating random options of ladder snake and player
             int option = random.nextInt(3);
             if (option == 0) {
-                System.out.println("No Play");
+
+                 System.out.println("No Play");
                 playerPosition = playerPosition;
-                System.out.println(playerPosition);
-            } else if (option == 1) {
-                System.out.println("Ladder");
-                playerPosition = playerPosition + dies;
-                System.out.println(playerPosition);
-            } else {
-                System.out.println("Snake");
-                playerPosition = playerPosition - dies;
-                System.out.println(playerPosition);
-            }
+            }else if (option == 1)
+                {
+                    System.out.println("Ladder");
+                    if (playerPosition>WINNING_POSITION)
+                      playerPosition = playerPosition- dies;
+                        else
+                        playerPosition = playerPosition + dies;
+
+                }
+                else {
+                         System.out.println("Snake");
+                        playerPosition = playerPosition - dies;
+                        if (playerPosition < 0)
+                            playerPosition=0;
 
         }
     }
-}
