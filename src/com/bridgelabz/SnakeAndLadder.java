@@ -1,8 +1,9 @@
 package com.bridgelabz;
 import java.util.Random;
 
-public class SnakeAndLadder {
-    static final int WINNING_POSITION = 100;
+public class SnakeAndLadder
+{
+    public static int WINNING_POSITION=100;
     public static void main(String[] args) {
         int playerPosition = 0;
         int dies;
@@ -40,3 +41,5 @@ public class SnakeAndLadder {
     }
 }
 
+
+       
