@@ -7,6 +7,7 @@ public class SnakeAndLadder {
         int playerPosition = 0;
         int dies;
         int moves=0;
+
         Random random =new Random();
         System.out.println(+playerPosition+" " + "This is the players starting Position");
 
@@ -38,6 +39,6 @@ public class SnakeAndLadder {
                 System.out.println("Player On::"+playerPosition);
             }
         }
-        System.out.println("Total Moves ="+moves);    }
+        System.out.println("Total Moves ="+moves);    
+    }
 }
-
