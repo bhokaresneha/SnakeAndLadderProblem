@@ -1,18 +1,19 @@
 package com.bridgelabz;
 import java.util.Random;
 
-public class SnakeAndLadder
-{
-    public static int WINNING_POSITION=100;
+public class SnakeAndLadder {
+    static final int WINNING_POSITION = 100;
     public static void main(String[] args) {
         int playerPosition = 0;
         int dies;
+        int moves=0;
+
         Random random =new Random();
         System.out.println(+playerPosition+" " + "This is the players starting Position");
 
         System.out.println("Rolls the dice to get number ");
         while (playerPosition != WINNING_POSITION) {
-
+            moves++;
             dies = random.nextInt(6) + 1;
             System.out.println("dies =>"+dies);
             int option = random.nextInt( 3);
@@ -38,8 +39,6 @@ public class SnakeAndLadder
                 System.out.println("Player On::"+playerPosition);
             }
         }
+        System.out.println("Total Moves ="+moves);    
     }
 }
-
-
-       
